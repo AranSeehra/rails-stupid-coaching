@@ -1,2 +1,16 @@
-<h1><%= @answer %></h1>
-<p class='btn'><%= link_to "Ask again!", ask_path %></p>
+<div class="container">
+  <h1>Stupid Coach!</h1>
+  <blockquote>
+    <p><%= @question %></p>
+    <footer class="italics">-You</footer>
+  </blockquote>
+  <br>
+  <div>
+    <blockquote style="background: #FFFFE0">
+      <p><%= @answer %></p>
+      <footer class="italics">-Coach</footer>
+    </blockquote>
+  </div>
+
+<p class='btn'><%= link_to "Ask a new question!", ask_path %></p>
+</div>

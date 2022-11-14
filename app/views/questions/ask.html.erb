@@ -1,4 +1,8 @@
-<form id="form" action="/answer" data-turbo="false">
-  <input type="text" name="<%= params[:question] %>">
-  <input type="submit" value="Ask!">
-</form>
+<div class="question">
+  <h1>Stupid Coach!</h1>
+  <p>Ask your question here:</p>
+  <form class="input-group mb-3" id="form" action="/answer" data-turbo="false">
+    <input type="text" name="question" size="50" class="form-control">
+    <input class="btn btn-primary" type="submit" value="Ask!">
+  </form>
+</div>
